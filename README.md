@@ -56,6 +56,7 @@ A method must be declared within a class. It is defined with the name of the met
 
 # Java Constructors:
 A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created. It can be used to set initial values for object attributes.
+
 All classes have constructors, whether you define one or not, because Java automatically provides a default constructor that initializes all member variables to zero. However, once you define your own constructor, the default constructor is no longer used.
 
 <img width="468" alt="Screenshot 2022-04-24 at 9 51 38 PM" src="https://user-images.githubusercontent.com/100840176/164986101-41ed9fb2-a7cd-4e36-8436-644965be57be.png">
@@ -72,8 +73,11 @@ Java allows two types of constructors namely −
 
 # Access Modifiers in Java:
 There are two types of modifiers in Java: access modifiers and non-access modifiers.
+
 The access modifiers in Java specify the accessibility or scope of a field, method, constructor, or class. We can change the access level of fields, constructors, methods, and class by applying the access modifier on it.
+
 There are four types of Java access modifiers:
+
 1. Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
 2. Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
 3. Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
@@ -85,6 +89,7 @@ There are many non-access modifiers, such as static, abstract, synchronized, nat
 # Encapsulation :
 Encapsulation is one of the four fundamental OOP concepts. The other three are inheritance, polymorphism, and abstraction.
 Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
+
 To achieve encapsulation in Java  : 
 * Declare the variables of a class as private.
 * Provide public setter and getter methods to modify and view the variables values.
