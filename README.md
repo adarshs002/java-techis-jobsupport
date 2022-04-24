@@ -28,76 +28,66 @@ The main aim of object-oriented programming is to implement real-world entities,
 ## Create a Class
 To create a class, use the keyword class:
 
+<img width="1002" alt="Screenshot 2022-04-12 at 9 26 05 AM" src="https://user-images.githubusercontent.com/100840176/164985859-10db6e07-e9ca-457b-8b8d-783e436f811c.png">
 
-
-Create an Object:
+## Create an Object:
 In Java, an object is created from a class. We have already created the class named Puppy, so now we can use this to create objects.
+
 To create an object of Puppy, specify the class name, followed by the object name, and use the keyword new:
 
+<img width="544" alt="Screenshot 2022-04-24 at 9 48 13 PM" src="https://user-images.githubusercontent.com/100840176/164985946-07863f87-73bc-4322-b6f3-e80485aa5d70.png">
 
 Output:
+<img width="499" alt="Screenshot 2022-04-24 at 9 48 56 PM" src="https://user-images.githubusercontent.com/100840176/164985976-d7003ac9-9671-4cb5-9238-950024611b60.png">
 
-
-
-
-Class Attributes:
+# Class Attributes:
 In java, a variable within the class is referred to as a class attribute and the class attributes are also known as fields. Let’s understand the concept of a class attribute with the help of an example. Let’s say we have a class named Employee as shown in the below-given snippet:
+
+
+<img width="622" alt="Screenshot 2022-04-24 at 9 49 58 PM" src="https://user-images.githubusercontent.com/100840176/164986033-3aa019cb-efe0-41c6-b701-e8a35a7512b3.png">
 
 Here in the above snippet empName, empId, empAge, are the attributes of the “Employee” class.
 The attributes of the class can be accessed with the help of the class object.
 
-Method:
+# Method:
 A method must be declared within a class. It is defined with the name of the method, followed by parentheses (). Java provides some predefined methods, such as public static void main() , but you can also create your own methods to perform certain actions:
 
+<img width="544" alt="Screenshot 2022-04-24 at 9 50 59 PM" src="https://user-images.githubusercontent.com/100840176/164986069-7888cbf7-ab9b-46fe-876c-b1d69e6af300.png">
 
-
-Java Constructors:
+# Java Constructors:
 A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created. It can be used to set initial values for object attributes.
 All classes have constructors, whether you define one or not, because Java automatically provides a default constructor that initializes all member variables to zero. However, once you define your own constructor, the default constructor is no longer used.
 
+<img width="468" alt="Screenshot 2022-04-24 at 9 51 38 PM" src="https://user-images.githubusercontent.com/100840176/164986101-41ed9fb2-a7cd-4e36-8436-644965be57be.png">
 
 Java allows two types of constructors namely −
-Default constructor(No-Arg Constructor) : A constructor is called "Default Constructor" when it doesn't have any parameter and it is created by default.
-Parameterized Constructor : A constructor which has a specific number of parameters is called a parameterized constructor, it is created by a programmer.
+* Default constructor(No-Arg Constructor) : A constructor is called "Default Constructor" when it doesn't have any parameter and it is created by default.
+* Parameterized Constructor : A constructor which has a specific number of parameters is called a parameterized constructor, it is created by a programmer.
 		
+<img width="520" alt="Screenshot 2022-04-24 at 9 52 25 PM" src="https://user-images.githubusercontent.com/100840176/164986130-751ba198-afd1-42af-9f39-887f1bbe6f8a.png">
 
+# Constructor Vs Method:
 
-Constructor Vs Method:
+<img width="632" alt="Screenshot 2022-04-24 at 9 53 18 PM" src="https://user-images.githubusercontent.com/100840176/164986174-fe8889bd-c06a-47ad-a8ce-fc1f4bbbbd56.png">
 
-Java Constructor
-Java Method
-A constructor is used to initialize the state of an object.
-A method is used to expose the behavior of an object.
-A constructor must not have a return type.
-A method must have a return type.
-The constructor is invoked implicitly.
-The method is invoked explicitly.
-The Java compiler provides a default constructor if you don't have any constructor in a class.
-The method is not provided by the compiler in any case.
-The constructor name must be the same as the class name.
-The method name may or may not be the same as the class name.
-
-
-
-
-
-Access Modifiers in Java:
+# Access Modifiers in Java:
 There are two types of modifiers in Java: access modifiers and non-access modifiers.
 The access modifiers in Java specify the accessibility or scope of a field, method, constructor, or class. We can change the access level of fields, constructors, methods, and class by applying the access modifier on it.
 There are four types of Java access modifiers:
-Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
-Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
-Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
-Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+1. Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+2. Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
+3. Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
+4. Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
 There are many non-access modifiers, such as static, abstract, synchronized, native, volatile, transient, etc. Here, we are going to learn the access modifiers only.
 
- 
-Encapsulation :
+<img width="624" alt="Screenshot 2022-04-24 at 9 55 07 PM" src="https://user-images.githubusercontent.com/100840176/164986296-f22fd253-04d1-4fef-bca3-8d0081d6616e.png">
+
+# Encapsulation :
 Encapsulation is one of the four fundamental OOP concepts. The other three are inheritance, polymorphism, and abstraction.
 Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
 To achieve encapsulation in Java  : 
-Declare the variables of a class as private.
-Provide public setter and getter methods to modify and view the variables values.
+* Declare the variables of a class as private.
+* Provide public setter and getter methods to modify and view the variables values.
  
 Get and Set
 You learned from the previous topic that private variables can only be accessed within the same class (an outside class has no access to it). However, it is possible to access them if we provide public get and set methods.
