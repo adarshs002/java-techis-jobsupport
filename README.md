@@ -113,17 +113,22 @@ The get method returns the variable value, and the set method sets the value.
 
 Syntax for both is that they start with either get or set, followed by the name of the variable, with the first letter in upper case:
 
-## Example:
+Example:
 
+<img width="540" alt="Screenshot 2022-04-24 at 10 06 20 PM" src="https://user-images.githubusercontent.com/100840176/164986721-e208f558-8e45-4e6f-9006-9e8c9ca33776.png">
 	
-Java Packages & API :
+# Java Packages & API :
 A package in Java is used to group related classes. Think of it as a folder in a file directory. We use packages to avoid name conflicts, and to write a better maintainable code. Packages are divided into two categories:
  
-Built-in Packages (packages from the Java API) :The Java API is a library of prewritten classes that are free to use, included in the Java Development Environment.
-     Syntax:
+* Built-in Packages (packages from the Java API) :The Java API is a library of prewritten classes that are free to use, included in the Java Development Environment.
+
+Syntax:
+
 import package.name.Class;   // Import a single class
 import package.name.*;   // Import the whole package
+
 EXAMPLE:
+
 import java.util.Scanner;
 class MyClass {
   public static void main(String[] args) {
@@ -133,25 +138,34 @@ class MyClass {
     System.out.println("Username is: " + userName);
   }
 }
-User-defined Packages (create your own packages):To create your own package, you need to understand that Java uses a file system directory to store them. Just like folders on your computer.
+
+* User-defined Packages (create your own packages):To create your own package, you need to understand that Java uses a file system directory to store them. Just like folders on your computer.
  
 		└── root
   			└── mypack
     				└── MyPackageClass.java
  
 To create a package, use the package keyword:
+
 package mypack;
 class MyPackageClass {
   public static void main(String[] args) {
     System.out.println("This is my package!");
   }
-Inheritance in Java:
+  
+ 
+# Inheritance in Java:
+
 In Java, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
-subclass (child) - the class that inherits from another class
-superclass (parent) - the class being inherited from
+
+* subclass (child) - the class that inherits from another class
+* superclass (parent) - the class being inherited from
+
 To inherit from a class, use the extends keyword.
+
 In the example below, the Car class (subclass) inherits the attributes and methods from the Vehicle class (superclass).
-Why use inheritance in java:
+
+## Why use inheritance in java:
 For Method Overriding (so runtime polymorphism can be achieved).
 For Code Reusability.
 Syntax:
