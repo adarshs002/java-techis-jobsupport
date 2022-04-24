@@ -18,47 +18,16 @@ Apart from these concepts, there are some other terms which are used in Object-O
 The main aim of object-oriented programming is to implement real-world entities, for example, objects, classes, abstraction, inheritance, polymorphism, etc.
 
 <img width="577" alt="Screenshot 2022-04-21 at 1 33 19 PM" src="https://user-images.githubusercontent.com/100840176/164408879-ad324538-99ef-4a43-83cd-7f3ebe10bc33.png">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-OOPs (Object-Oriented Programming System):
-
-Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:
-Object
-Class
-Inheritance
-Polymorphism
-Abstraction
-Encapsulation
-Apart from these concepts, there are some other terms which are used in Object-Oriented design:
-Coupling
-Cohesion
-Association
-Aggregation
-Composition
-The main aim of object-oriented programming is to implement real-world entities, for example, objects, classes, abstraction, inheritance, polymorphism, etc.
-
  
-Classes/Objects:
+# Classes/Objects:
 
-Object − Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors – wagging the tail, barking, eating. An object is an instance of a class.
+* Object − Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors – wagging the tail, barking, eating. An object is an instance of a class.
 
-Class − Collection of objects is called class. It is a logical entity. A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
+* Class − Collection of objects is called class. It is a logical entity. A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
 
-Create a Class
+## Create a Class
 To create a class, use the keyword class:
+
 
 
 Create an Object:
