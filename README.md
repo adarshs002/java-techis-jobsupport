@@ -613,7 +613,7 @@ for (String i : capitalCities.values()) {
 
 * Exception Handling : The Exception Handling in Java is one of the powerful mechanisms to handle the runtime errors so that the normal flow of the application can be maintained.
 
-Types of Java Exceptions
+## Types of Java Exceptions
 
 1) Checked Exception : The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time.
 
@@ -621,51 +621,54 @@ Types of Java Exceptions
 
 3) Error : Error is irrecoverable.Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.
 
+<img width="335" alt="Screenshot 2022-04-24 at 10 43 12 PM" src="https://user-images.githubusercontent.com/100840176/164988216-0be33c2e-a68e-4287-97e5-bb2332f47401.png">
 
+# Hierarchy of Java Exception classes
 
-Hierarchy of Java Exception classes
 The java.lang.Throwable class is the root class of Java Exception hierarchy inherited by two subclasses: Exception and Error.
 
+<img width="423" alt="Screenshot 2022-04-24 at 10 43 57 PM" src="https://user-images.githubusercontent.com/100840176/164988235-2797a43c-3d3f-47c9-9b67-ea9d258c222c.png">
 
+# Java Exception Keywords :
 
-
-Java Exception Keywords :
 Java provides five keywords that are used to handle the exception.
 
-Keyword
-Description
-try
-The "try" keyword is used to specify a block where we should place an exception code. It means we can't use try block alone. The try block must be followed by either catch or finally.
-catch
-The "catch" block is used to handle the exception. It must be preceded by try block which means we can't use catch block alone. It can be followed by finally block later.
-finally
-The "finally" block is used to execute the necessary code of the program. It is executed whether an exception is handled or not.
-throw
-The "throw" keyword is used to throw an exception.
-throws
-The "throws" keyword is used to declare exceptions. It specifies that there may occur an exception in the method. It doesn't throw an exception. It is always used with method signature.
-
-
+<img width="626" alt="Screenshot 2022-04-24 at 10 45 37 PM" src="https://user-images.githubusercontent.com/100840176/164988294-f5589bcf-dd0d-4e79-9a3a-e31e3d2e33e7.png">
 
 Example:
 
+<img width="549" alt="Screenshot 2022-04-24 at 10 46 17 PM" src="https://user-images.githubusercontent.com/100840176/164988330-edbb1ca7-659b-449a-9370-a59fdda32310.png">
 
-Lambda Expressions :
+# Lambda Expressions :
+
 Lambda Expressions were added in Java 8.
+
 A lambda expression is a short block of code which takes in parameters and returns a value. Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
-Syntax
+
+## Syntax
+
 Java lambda expression consists of three components.
+
 1) Argument-list: It can be empty or non-empty as well.
 2) Arrow-token: It is used to link arguments-list and body of expression.
 3) Body: It contains expressions and statements for lambda expression.
 
  
 The simplest lambda expression contains a single parameter and an expression:
+
 parameter -> expression
+
 (parameter1, parameter2) -> expression
+
 (parameter1, parameter2) -> { code block }
-Why use Lambda Expression
-To provide the implementation of Functional interface.
-Less coding.
+
+## Why use Lambda Expression
+
+1. To provide the implementation of Functional interface.
+2. Less coding.
+
 Example: 
+
 Use a lambda expression in the ArrayList's forEach() method to print every item in the list:
+
+<img width="500" alt="Screenshot 2022-04-24 at 10 48 18 PM" src="https://user-images.githubusercontent.com/100840176/164988410-5743d1c6-608e-4ce7-8383-7b1ef2eb8963.png">
