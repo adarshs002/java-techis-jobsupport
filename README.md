@@ -125,18 +125,27 @@ A package in Java is used to group related classes. Think of it as a folder in a
 Syntax:
 
 import package.name.Class;   // Import a single class
+
 import package.name.*;   // Import the whole package
 
 EXAMPLE:
 
 import java.util.Scanner;
+
 class MyClass {
+
   public static void main(String[] args) {
+  
     Scanner myObj = new Scanner(System.in);
+    
     System.out.println("Enter username");
+    
     String userName = myObj.nextLine();
+    
     System.out.println("Username is: " + userName);
+    
   }
+  
 }
 
 * User-defined Packages (create your own packages):To create your own package, you need to understand that Java uses a file system directory to store them. Just like folders on your computer.
@@ -148,9 +157,13 @@ class MyClass {
 To create a package, use the package keyword:
 
 package mypack;
+
 class MyPackageClass {
+
   public static void main(String[] args) {
+  
     System.out.println("This is my package!");
+    
   }
   
  
@@ -166,57 +179,73 @@ To inherit from a class, use the extends keyword.
 In the example below, the Car class (subclass) inherits the attributes and methods from the Vehicle class (superclass).
 
 ## Why use inheritance in java:
-For Method Overriding (so runtime polymorphism can be achieved).
-For Code Reusability.
+
+* For Method Overriding (so runtime polymorphism can be achieved).
+* For Code Reusability.
+
 Syntax:
 	class Subclass-name extends Superclass-name  {  
+	
 			//methods and fields  
+			
 } 
-Types of Inheritance:
+
+## Types of Inheritance:
+
+<img width="540" alt="Screenshot 2022-04-24 at 10 13 28 PM" src="https://user-images.githubusercontent.com/100840176/164987005-4492a3ba-7de4-44eb-ba70-7fc18ee8809f.png">
 
 Example:
 
- 
-Polymorphism:
+<img width="624" alt="Screenshot 2022-04-24 at 10 14 07 PM" src="https://user-images.githubusercontent.com/100840176/164987034-3a8cb6db-4343-4cf3-8ce0-380a25117689.png">
+
+# Polymorphism:
 
 The word polymorphism means having many forms. In simple words, we can define.polymorphism as the ability of a message to be displayed in more than one form.
 
-Real-life Illustration:
+## Real-life Illustration:
 
 A person at the same time can have different characteristics. Like a man at the same time is a father, a husband, an employee. So the same person possesses different behavior in different situations. This is called polymorphism. 
 
-
-
-
-Types of Polymorphism:
+## Types of Polymorphism:
 
 In Java polymorphism is mainly divided into two types:
 
-Compile-time Polymorphism: It is also known as static polymorphism. This type of polymorphism is achieved by function overloading of operator overloading.
+* Compile-time Polymorphism: It is also known as static polymorphism. This type of polymorphism is achieved by function overloading of operator overloading.
 
-Method Overloading: When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by change in the number of arguments or/and a change in the type of arguments. 
+** Method Overloading: When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by change in the number of arguments or/and a change in the type of arguments. 
 
-		
-Runtime Polymorphism: It is also known as Dynamic Method Dispatch. It is a process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by Method Overriding. Method overriding, on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
+* Runtime Polymorphism: It is also known as Dynamic Method Dispatch. It is a process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by Method Overriding. Method overriding, on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
 
 Example:
 
 class Animal {
+
   public void animalSound() {
+  
     System.out.println("The animal makes a sound");
+    
   }
+  
 }
 
 class Pig extends Animal {
+
   public void animalSound() {
+  
     System.out.println("The pig says: wee wee");
+    
   }
+  
 }
 
 class Dog extends Animal {
+
   public void animalSound() {
+  
     System.out.println("The dog says: bow wow");
+    
   }
+  
 }
 
 
@@ -224,59 +253,93 @@ class Dog extends Animal {
 
 
 Public class Main {
+
   public static void main(String[] args) {
+  
     Animal myAnimal = new Animal();  // Create a Animal object
+    
     Animal myPig = new Pig();  // Create a Pig object
+    
     Animal myDog = new Dog();  // Create a Dog object
+    
     myAnimal.animalSound();
+    
     myPig.animalSound();
+    
     myDog.animalSound();
+    
   }
+  
 }
+
 Output:
 
 The animal makes a sound
+
 The pig says: wee wee
+
 The dog says: bow wow
 
-Abstraction:
+# Abstraction:
 
 Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
 Another way, it shows only essential things to the user and hides the internal details, for example, sending SMS where you type the text and send the message. You don't know the internal processing about the message delivery.
+
 Abstraction lets you focus on what the object does instead of how it does it.
 
 There are two ways to achieve abstraction in java :
-Abstract class.
-Interface.
+
+1. Abstract class.
+2. Interface.
  
 The abstract keyword is a non-access modifier, used for classes and methods:
-Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
-Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
+* Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+* Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
 Example:
 
+<img width="595" alt="Screenshot 2022-04-24 at 10 18 19 PM" src="https://user-images.githubusercontent.com/100840176/164987209-5530587e-798d-43c0-af7f-72086c74d7c9.png">
+
  
- 
-Interface :
+# Interface :
+
 An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+
 The interface in Java is a mechanism to achieve abstraction.There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
+
 In other words, you can say that interfaces can have abstract methods and variables. It cannot have a method body.
+
 There are mainly three reasons to use interfaces. They are given below:
-It is used to achieve abstraction.
-By interface, we can support the functionality of multiple inheritance.
-It can be used to achieve loose coupling.
-Syntax: 
+
+* It is used to achieve abstraction.
+* By interface, we can support the functionality of multiple inheritance.
+* It can be used to achieve loose coupling.
+
+## Syntax: 
+
 interface Animal {
+
   public void animalSound(); // interface method (does not have a body)
+  
   public void run(); // interface method (does not have a body)
+  
 }
-The relationship between classes and interfaces:
+
+## The relationship between classes and interfaces:
+
 As shown in the figure given below, a class extends another class, an interface extends another interface, but a class implements an interface.
+
+<img width="452" alt="Screenshot 2022-04-24 at 10 20 50 PM" src="https://user-images.githubusercontent.com/100840176/164987311-1d39212b-279f-4347-922c-1eb0d89c50ac.png">
 
 Example :
 
- 
- 
-User Input :
+<img width="468" alt="Screenshot 2022-04-24 at 10 21 17 PM" src="https://user-images.githubusercontent.com/100840176/164987334-f21a4067-28e5-4e6d-b25b-b6e1d3fbe529.png">
+
+
+
+# User Input :
 The Scanner class is used to get user input, and it is found in the java.util package.It is used to read the input of primitive types like int, double, long, short, float, and byte. It is the easiest way to read input in a Java program.
 Syntax :
 Scanner sc=new Scanner(System.in);  
