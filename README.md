@@ -28,7 +28,7 @@ The main aim of object-oriented programming is to implement real-world entities,
 ## Create a Class
 To create a class, use the keyword class:
 
-<img width="1002" alt="Screenshot 2022-04-12 at 9 26 05 AM" src="https://user-images.githubusercontent.com/100840176/164985859-10db6e07-e9ca-457b-8b8d-783e436f811c.png">
+<img width="1002" alt="Screenshot 2022-04-12 at 9 26 05 AM" src="https://user-images.githubusercontent.com/100840176/164986435-7f2c743f-6b4a-4440-b137-2fff2d215e1f.png">
 
 ## Create an Object:
 In Java, an object is created from a class. We have already created the class named Puppy, so now we can use this to create objects.
