@@ -340,206 +340,285 @@ Example :
 
 
 # User Input :
+
 The Scanner class is used to get user input, and it is found in the java.util package.It is used to read the input of primitive types like int, double, long, short, float, and byte. It is the easiest way to read input in a Java program.
-Syntax :
+
+## Syntax :
+
 Scanner sc=new Scanner(System.in);  
  
  
 Methods of Java Scanner Class: 
 
-
-
-Method
-Description
-int nextInt()
-It is used to scan the next token of the input as an integer. / Read int.
-float nextFloat()
-It is used to scan the next token of the input as a float. /Read float.
-double nextDouble()
-It is used to scan the next token of the input as a double./ Read double.
-byte nextByte()
-It is used to scan the next token of the input as a byte. / Read byte.
-String nextLine()
-Advances this scanner past the current line. / Read String.
-boolean nextBoolean()
-It is used to scan the next token of the input into a boolean value. / Read boolean . 
-long nextLong()
-It is used to scan the next token of the input as a long. / Read long . 
-short nextShort()
-It is used to scan the next token of the input as a Short. / Read short
-BigInteger nextBigInteger()
-It is used to scan the next token of the input as a BigInteger.
-BigDecimal nextBigDecimal()
-It is used to scan the next token of the input as a BigDecimal.
-
-
- 
- 
- 
+<img width="625" alt="Screenshot 2022-04-24 at 10 25 37 PM" src="https://user-images.githubusercontent.com/100840176/164987528-b5718c4b-87dd-4a41-979e-59f4a8a17623.png">
  
  
 Example: 
 
+<img width="621" alt="Screenshot 2022-04-24 at 10 27 18 PM" src="https://user-images.githubusercontent.com/100840176/164987582-495fd444-d242-46ab-a6bc-0a958d025353.png">
 
-ArrayList :
+# ArrayList :
+
 Java ArrayList class uses a dynamic array.for storing the elements. It is like an array, but there is no size limit. We can add or remove elements anytime. So, it is much more flexible than the traditional array. It is found in the java.util package.
+
 The ArrayList in Java can have the duplicate elements also. It implements the List interface so we can use all the methods of the List interface here. The ArrayList maintains the insertion order internally.
+
 It inherits the AbstractList class and implements List interface
 
+<img width="168" alt="Screenshot 2022-04-24 at 10 30 16 PM" src="https://user-images.githubusercontent.com/100840176/164987694-4d919477-cc91-4fe6-ba13-a390a8b2465a.png">
 
-The important points about the Java ArrayList class are:
-Java ArrayList class can contain duplicate elements.
-Java ArrayList class maintains insertion order.
-Java ArrayList class is non synchronized . 
-Java ArrayList allows random access because the array works on an index basis.
-In ArrayList, manipulation is a little bit slower than the LinkedList in Java because a lot of shifting needs to occur if any element is removed from the array list.
-We can not create an array list of the primitive types, such as int, float, char, etc. It is required to use the required wrapper class in such cases.
-Methods of ArrayList :
-Add Items:
+## The important points about the Java ArrayList class are:-
+
+* Java ArrayList class can contain duplicate elements.
+* Java ArrayList class maintains insertion order.
+* Java ArrayList class is non synchronized . 
+* Java ArrayList allows random access because the array works on an index basis.
+* In ArrayList, manipulation is a little bit slower than the LinkedList in Java because a lot of shifting needs to occur if any element is removed from the array list.
+* We can not create an array list of the primitive types, such as int, float, char, etc. It is required to use the required wrapper class in such cases.
+
+
+# Methods of ArrayList :
+
+## Add Items:
+
 The ArrayList class has many useful methods. For example, to add elements to the ArrayList, use the add() method:
+
 Example: 
+
 ​​import java.util.ArrayList;
+
 public class Main {
+
   public static void main(String[] args) {
+  
     ArrayList<String> cars = new ArrayList<String>();
+    
     cars.add("Volvo");
+    
     cars.add("BMW");
+    
   }
+  
 }
-Access an Item:
+
+## Access an Item:
+
 To access an element in the ArrayList, use the get() method and refer to the index number:
+
 Example:
+
 cars.get(0);
-Change an Item:
+
+## Change an Item:
+
 To modify an element, use the set() method and refer to the index number:
+
 Example:
+
 cars.set(0, "Opel");
-Remove an Item:
-To remove an element, use the remove() method and refer to the index number:
+
+## Remove an Item:
+
+* To remove an element, use the remove() method and refer to the index number:
+
 Example:
+
 cars.remove(0);
 
-To remove all the elements in the ArrayList, use the clear() method:
+* To remove all the elements in the ArrayList, use the clear() method:
+
 Example :
+
 cars.clear();
  
-ArrayList Size:
+# ArrayList Size:
 To find out how many elements an ArrayList have, use the size method:
 
 Example :
+
 cars.size();
 
  
-Loop Through an ArrayList :
+## Loop Through an ArrayList :
+
 Loop through the elements of an ArrayList with a for loop, and use the size() method to specify how many times the loop should run:
  
 Example:
+
 public class Main {
+
   public static void main(String[] args) {
+  
     ArrayList<String> cars = new ArrayList<String>();
+    
     cars.add("Volvo");
+    
     cars.add("BMW");
+    
     cars.add("Ford");
+    
     cars.add("Mazda");
+    
     for (int i = 0; i < cars.size(); i++) {
+    
       System.out.println(cars.get(i));
+      
     }
+    
   }
 
-Sort an ArrayList :
+## Sort an ArrayList :
+
 Another useful class in the java.util package is the Collections class, which include the sort() method for sorting lists alphabetically or numerically:
 
 Example:
 
 import java.util.ArrayList;
+
 import java.util.Collections;  // Import the Collections class
 
 public class Main {
+
   public static void main(String[] args) {
+  
     ArrayList<String> cars = new ArrayList<String>();
+    
     cars.add("Volvo");
+    
     cars.add("BMW");
+    
     cars.add("Ford");
+    
     cars.add("Mazda");
+    
     Collections.sort(cars);  // Sort cars
+    
     for (String i : cars) {
+    
       System.out.println(i);
+      
     }
+    
   }
+  
 }
-LinkedList class :
+
+
+# LinkedList class :
+
 In the previous topic, you learned about the ArrayList class. The LinkedList class is almost identical to the ArrayList:
 
-ArrayList vs. LinkedList
+## ArrayList vs. LinkedList
+
 The LinkedList class is a collection which can contain many objects of the same type, just like the ArrayList.
+
 The LinkedList class has all of the same methods as the ArrayList class because they both implement the List interface. This means that you can add items, change items, remove items and clear the list in the same way.
+
 However, while the ArrayList class and the LinkedList class can be used in the same way, they are built very differently.
-When To Use
+
+## When To Use
+
 Use an ArrayList for storing and accessing data, and LinkedList to manipulate data.
  
-LinkedList Methods :
+## LinkedList Methods :
 
-HashMap :
+<img width="655" alt="Screenshot 2022-04-24 at 10 35 28 PM" src="https://user-images.githubusercontent.com/100840176/164987910-c6fa3f63-085c-491f-bf12-c47a98296def.png">
+
+# HashMap :
+
 In the ArrayList chapter, you learned that Arrays store items as an ordered collection, and you have to access them with an index number (int type). A HashMap however, stores items in "key/value" pairs, and you can access them by an index of another type (e.g. a String).
+
 One object is used as a key (index) to another object (value). It can store different types: String keys and Integer values, or the same type, like: String keys and String values:
-Points to remember
-Java HashMap contains values based on the key.
-Java HashMap contains only unique keys.
-Java HashMap may have one null key and multiple null values.
-Java HashMap is non synchronized.
-Java HashMap maintains no order.
-The initial default capacity of Java HashMap class is 16 with a load factor of 0.75.
+
+## Points to remember
+
+* Java HashMap contains values based on the key.
+* Java HashMap contains only unique keys.
+* Java HashMap may have one null key and multiple null values.
+* Java HashMap is non synchronized.
+* Java HashMap maintains no order.
+* The initial default capacity of Java HashMap class is 16 with a load factor of 0.75.
+
 Example:
+
 Create a HashMap object called capitalCities that will store String keys and String values:
 
 import java.util.HashMap; // import the HashMap class
 
 HashMap<String, String> capitalCities = new HashMap<String, String>();
 
-Add Items
+## Add Items
 The HashMap class has many useful methods. For example, to add items to it, use the put() method:
  
 Example: 
 
-Access an Item:
+<img width="610" alt="Screenshot 2022-04-24 at 10 37 24 PM" src="https://user-images.githubusercontent.com/100840176/164987976-a53ecfd9-4e0b-4a2e-9ed1-8584e9b9a1fa.png">
+
+## Access an Item:
+
 To access a value in the HashMap, use the get() method and refer to its key:
+
 Example: 
+
 capitalCities.get("England");
  
-Remove an Item :
+## Remove an Item :
+
 To remove an item, use the remove() method and refer to the key:
+
 To remove all items, use the clear() method:
 
 Example:
+
 capitalCities.remove("England");
+
 capitalCities.clear();
 
  
-HashMap Size:
+## HashMap Size:
+
 To find out how many items there are, use the size() method:
 
 Example:
+
 capitalCities.size();
-Loop Through a HashMap :
+
+## Loop Through a HashMap :
+
 Loop through the items of a HashMap with a for-each loop.
+
 Note: Use the keySet() method if you only want the keys, and use the values() method if you only want the values:
  
 Example:
+
 // Print keys
+
 for (String i : capitalCities.keySet()) {
+
   System.out.println(i);
-}
-// Print values
-for (String i : capitalCities.values()) {
-  System.out.println(i);
+  
 }
 
-Exception Handling: 
-Exception : Exception is an abnormal condition.In Java, an exception is an event that disrupts the normal flow of the program. It is an object which is thrown at runtime.
-Exception Handling : The Exception Handling in Java is one of the powerful mechanisms to handle the runtime errors so that the normal flow of the application can be maintained.
+// Print values
+
+for (String i : capitalCities.values()) {
+
+  System.out.println(i);
+  
+}
+
+# Exception Handling: 
+
+* Exception : Exception is an abnormal condition.In Java, an exception is an event that disrupts the normal flow of the program. It is an object which is thrown at runtime.
+
+* Exception Handling : The Exception Handling in Java is one of the powerful mechanisms to handle the runtime errors so that the normal flow of the application can be maintained.
+
 Types of Java Exceptions
+
 1) Checked Exception : The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time.
+
 2) Unchecked Exception : The classes that inherit the RuntimeException are known as unchecked exceptions. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc. Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
+
 3) Error : Error is irrecoverable.Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.
 
 
